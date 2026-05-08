@@ -17,27 +17,22 @@ Predicting whether a song is a "hit" using lyrics-based NLP models, framed as bi
 ├── bert_precision_recall.ipynb
 └── graphs.ipynb
 ```
----
 
 ## Where to Find Code
 
 All notebooks are at the root of the repo. Each corresponds to a specific model or pipeline stage.
 
----
 
 ## Where to Find Data
 
 `balanced_2000_df.csv` is at the root of the repo. It is a balanced 2000-sample dataset combining Spotify metadata and Billboard Hot 100 labels, with lyrics fetched via the Genius API.
 
----
 
 ## How to Run the Code
 
 All notebooks are Google Colab notebooks. You will need:
 - A Kaggle API token (username + key) to access the Spotify dataset
 - A Genius API client access token for lyrics scraping
-
----
 
 ## Order to Run
 
@@ -50,14 +45,10 @@ All notebooks are Google Colab notebooks. You will need:
 7. `bert.ipynb` / `bert_precision_recall.ipynb` — BERT model
 8. `graphs.ipynb` — run after model results are available
 
----
-
 ## Data Sources
 
 - [Billboard Hot 100 — Kaggle](https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs)
 - [Spotify Songs with Audio, Lyrics and Genres — Kaggle](https://www.kaggle.com/datasets/serkantysz/550k-spotify-songs-audio-lyrics-and-genres)
-
----
 
 ## Non-Standard Libraries & APIs
 
@@ -66,8 +57,6 @@ All notebooks are Google Colab notebooks. You will need:
 - [opendatasets](https://github.com/JovianML/opendatasets) — used to download Kaggle datasets directly in Colab
 - [Gensim](https://radimrehurek.com/gensim/models/word2vec.html) — used to train Word2Vec embeddings
 - [Hugging Face Transformers](https://huggingface.co/docs/transformers/index) — used to load and fine-tune BERT
-
----
 
 ## Models
 
